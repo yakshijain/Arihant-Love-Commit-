@@ -3,7 +3,7 @@ name: Generate QR Code for Repository
 on:
   push:
     branches:
-      - main  # Jab bhi "main" branch pe koi change push hoga, QR Code auto-generate hoga
+      - main  # Jab bhi "main" 
 
 jobs:
   generate_qr:
@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install QR Code Generator
-        run: sudo apt-get install -y qrencode  # QR Code generator install karein
+        run: sudo apt-get install -y qrencode  
 
       - name: Generate QR Code
         run: qrencode -o qr_code.png "https://github.com/yakshijain/Arihant-Love-Commit"
