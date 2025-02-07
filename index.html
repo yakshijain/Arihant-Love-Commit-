@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love for Arihant ❤️</title>
+    <style>
+        body {
+            background-color: #ffcccc;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .message {
+            font-size: 20px;
+            color: #444;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💖 For My Love, Arihant 💖</h1>
+    <p class="heart">❤️❤️❤️</p>
+    
+    <p class="message">Click the button below for a special message! 😊</p>
+    <button class="btn" onclick="showMessage()">Reveal Love Message 💌</button>
+
+    <p id="loveMessage" class="hidden">"Arihant, you are the <b>if</b> to my <b>else</b>, the <b>pointer</b> to my heart.  
+    My love for you runs in an <b>infinite while(true) loop</b>.  
+    Without you, my life would be a <b>segmentation fault</b>. I love you forever! 💖"</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("loveMessage").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
