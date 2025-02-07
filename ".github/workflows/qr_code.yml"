@@ -15,7 +15,7 @@ jobs:
       - name: Generate QR Code
         run: |
           sudo apt-get install qrencode
-          qrencode -o qr_code.png "https://github.com/YourUsername/Arihant-Love-Commit"
+          qrencode -o qr_code.png "https://github.com/yakshijain/Arihant-Love-Commit"
 
       - name: Upload QR Code
         uses: actions/upload-artifact@v3
